@@ -1,0 +1,318 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:Display
+LIBS:Pressure_Board-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ARDUINO_SHIELD SHIELD1
+U 1 1 5A680C05
+P 3250 2600
+F 0 "SHIELD1" H 2900 3550 60  0000 C CNN
+F 1 "ARDUINO_SHIELD" H 3300 1650 60  0000 C CNN
+F 2 "" H 3250 2600 60  0001 C CNN
+F 3 "" H 3250 2600 60  0001 C CNN
+	1    3250 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L RELAY-1XCHANGE_SPDT_RevE_Date15jun2010 K1
+U 1 1 5A6E49E9
+P 4050 4500
+F 0 "K1" H 4045 4780 50  0000 C CNN
+F 1 "RELAY-1XCHANGE_SPDT_RevE_Date15jun2010" H 4050 4175 50  0000 C CNN
+F 2 "" H 4050 4500 50  0000 C CNN
+F 3 "" H 4050 4500 50  0000 C CNN
+	1    4050 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 5A6E4B90
+P 3400 5100
+F 0 "R1" V 3480 5100 50  0000 C CNN
+F 1 "R" V 3400 5100 50  0000 C CNN
+F 2 "" V 3330 5100 50  0001 C CNN
+F 3 "" H 3400 5100 50  0001 C CNN
+	1    3400 5100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Conn_01x02 J2
+U 1 1 5A6E4C42
+P 5800 4900
+F 0 "J2" H 5800 5000 50  0000 C CNN
+F 1 "Conn_01x02" H 5800 4700 50  0000 C CNN
+F 2 "" H 5800 4900 50  0001 C CNN
+F 3 "" H 5800 4900 50  0001 C CNN
+	1    5800 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR3
+U 1 1 5A6E5235
+P 5400 4850
+F 0 "#PWR3" H 5400 4700 50  0001 C CNN
+F 1 "+12V" H 5400 4990 50  0000 C CNN
+F 2 "" H 5400 4850 50  0001 C CNN
+F 3 "" H 5400 4850 50  0001 C CNN
+	1    5400 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR2
+U 1 1 5A6E525B
+P 4300 4150
+F 0 "#PWR2" H 4300 4000 50  0001 C CNN
+F 1 "+12V" H 4300 4290 50  0000 C CNN
+F 2 "" H 4300 4150 50  0001 C CNN
+F 3 "" H 4300 4150 50  0001 C CNN
+	1    4300 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR4
+U 1 1 5A6E52D1
+P 5400 5050
+F 0 "#PWR4" H 5400 4800 50  0001 C CNN
+F 1 "GND" H 5400 4900 50  0000 C CNN
+F 2 "" H 5400 5050 50  0001 C CNN
+F 3 "" H 5400 5050 50  0001 C CNN
+	1    5400 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 4850 5400 4900
+Wire Wire Line
+	5400 4900 5600 4900
+Wire Wire Line
+	5600 5000 5400 5000
+Wire Wire Line
+	5400 5000 5400 5050
+Wire Wire Line
+	4300 4150 4300 4300
+$Comp
+L D D1
+U 1 1 5A6E54CD
+P 3400 4500
+F 0 "D1" H 3400 4600 50  0000 C CNN
+F 1 "D" H 3400 4400 50  0000 C CNN
+F 2 "" H 3400 4500 50  0001 C CNN
+F 3 "" H 3400 4500 50  0001 C CNN
+	1    3400 4500
+	0    1    1    0   
+$EndComp
+$Comp
+L TRANSISTOR-NPN-BIPOLAR_EN60617_Derived05-05-02_Date20130304 T1
+U 1 1 5A6E55AE
+P 3850 5100
+F 0 "T1" H 4150 5150 50  0000 C CNN
+F 1 "TRANSISTOR-NPN-BIPOLAR_EN60617_Derived05-05-02_Date20130304" H 3950 4785 50  0000 C CNN
+F 2 "" H 3850 5100 50  0000 C CNN
+F 3 "" H 3850 5100 50  0000 C CNN
+	1    3850 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR1
+U 1 1 5A6E57FC
+P 3900 5500
+F 0 "#PWR1" H 3900 5250 50  0001 C CNN
+F 1 "GND" H 3900 5350 50  0000 C CNN
+F 2 "" H 3900 5500 50  0001 C CNN
+F 3 "" H 3900 5500 50  0001 C CNN
+	1    3900 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 4350 3400 4300
+Wire Wire Line
+	3400 4300 3900 4300
+Wire Wire Line
+	3400 4800 3900 4800
+Text Label 4900 1000 0    60   ~ 0
+GND
+Wire Wire Line
+	4900 1000 5200 1000
+Text Label 4900 1100 0    60   ~ 0
+VDD
+Wire Wire Line
+	4900 1100 5200 1100
+Text Label 4900 1200 0    60   ~ 0
+MISO
+Wire Wire Line
+	4900 1200 5200 1200
+Text Label 4900 1300 0    60   ~ 0
+SCLK
+Wire Wire Line
+	4900 1300 5200 1300
+Text Label 6450 1300 0    60   ~ 0
+SS
+Wire Wire Line
+	6200 1300 6450 1300
+Text Label 2000 2500 0    60   ~ 0
+GND
+Wire Wire Line
+	2000 2500 2300 2500
+Text Label 4400 2100 0    60   ~ 0
+MISO
+Wire Wire Line
+	4200 2100 4400 2100
+Text Label 4400 2000 0    60   ~ 0
+SCLK
+Wire Wire Line
+	4200 2000 4400 2000
+Text Label 4400 2300 0    60   ~ 0
+SS
+Wire Wire Line
+	4200 2300 4400 2300
+Text Label 2000 2300 0    60   ~ 0
+VDD
+Wire Wire Line
+	2000 2300 2300 2300
+$Comp
+L Conn_01x01 J1
+U 1 1 5A6E616D
+P 4550 5100
+F 0 "J1" H 4550 5200 50  0000 C CNN
+F 1 "Conn_01x01" H 4550 5000 50  0000 C CNN
+F 2 "" H 4550 5100 50  0001 C CNN
+F 3 "" H 4550 5100 50  0001 C CNN
+	1    4550 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 4750 4300 5100
+Wire Wire Line
+	4300 5100 4350 5100
+Text Label 3900 4100 0    60   ~ 0
+5VDD
+Wire Wire Line
+	3900 4300 3900 4100
+Text Label 2000 2400 0    60   ~ 0
+5VDD
+Wire Wire Line
+	2000 2400 2300 2400
+Wire Wire Line
+	3400 4650 3400 4800
+Wire Wire Line
+	3900 4750 3900 4900
+Wire Wire Line
+	3550 5100 3650 5100
+Wire Wire Line
+	3900 5300 3900 5500
+Text Label 2900 5100 0    60   ~ 0
+D2
+Wire Wire Line
+	3250 5100 2900 5100
+Text Label 4450 3200 0    60   ~ 0
+D2
+Wire Wire Line
+	4200 3200 4450 3200
+$Comp
+L HSC_Sensor U1
+U 1 1 5A6FD169
+P 4400 2800
+F 0 "U1" H 5700 4850 60  0000 C CNN
+F 1 "HSC_Sensor" H 5700 4100 60  0000 C CNN
+F 2 "" H 5700 4100 60  0001 C CNN
+F 3 "" H 5700 4100 60  0001 C CNN
+	1    4400 2800
+	1    0    0    -1  
+$EndComp
+Connection ~ 3900 4800
+$Comp
+L 16x2_LCD U?
+U 1 1 5A77F04A
+P 5800 2650
+F 0 "U?" H 5800 3350 60  0000 C CNN
+F 1 "16x2_LCD" H 5800 1200 60  0000 C CNN
+F 2 "" H 5800 3350 60  0001 C CNN
+F 3 "" H 5800 3350 60  0001 C CNN
+	1    5800 2650
+	1    0    0    -1  
+$EndComp
+Text Label 5050 2100 0    60   ~ 0
+GND
+Wire Wire Line
+	5050 2100 5300 2100
+Text Label 5050 2200 0    60   ~ 0
+5VDD
+Wire Wire Line
+	5050 2200 5300 2200
+$Comp
+L Potentiometer U?
+U 1 1 5A77F899
+P 7000 2250
+F 0 "U?" H 7000 2650 60  0000 C CNN
+F 1 "Potentiometer" H 7000 2550 60  0000 C CNN
+F 2 "" H 7000 2650 60  0001 C CNN
+F 3 "" H 7000 2650 60  0001 C CNN
+	1    7000 2250
+	1    0    0    -1  
+$EndComp
+Text Label 6600 2800 0    60   ~ 0
+5VDD
+Text Label 7000 2800 0    60   ~ 0
+Vout
+Text Label 7400 2800 0    60   ~ 0
+GND
+Wire Wire Line
+	7400 2800 7400 2550
+Wire Wire Line
+	7000 2800 7000 2550
+Wire Wire Line
+	6600 2800 6600 2550
+Text Label 5050 2300 0    60   ~ 0
+Vout
+Wire Wire Line
+	5050 2300 5300 2300
+Text Label 5050 3500 0    60   ~ 0
+5VDD
+Text Label 5050 3600 0    60   ~ 0
+GND
+Wire Wire Line
+	5050 3600 5300 3600
+Wire Wire Line
+	5050 3500 5300 3500
+$EndSCHEMATC
