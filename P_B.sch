@@ -1,0 +1,420 @@
+EESchema Schematic File Version 2
+LIBS:P_B-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:arduino_shieldsNCL
+LIBS:Pressure_Board-cache
+LIBS:P_B-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ARDUINO_SHIELD SHIELD1
+U 1 1 5A88B5C5
+P 2800 2350
+F 0 "SHIELD1" H 2450 3300 60  0000 C CNN
+F 1 "ARDUINO_SHIELD" H 2850 1400 60  0000 C CNN
+F 2 "arduino_shields:ARDUINO SHIELD" H 2800 2350 60  0001 C CNN
+F 3 "" H 2800 2350 60  0001 C CNN
+	1    2800 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Barrel_Jack J1
+U 1 1 5A88B6A3
+P 4300 6750
+F 0 "J1" H 4300 6960 50  0000 C CNN
+F 1 "Barrel_Jack" H 4300 6575 50  0000 C CNN
+F 2 "PB:Barrel_Jack" H 4350 6710 50  0001 C CNN
+F 3 "" H 4350 6710 50  0001 C CNN
+	1    4300 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L 16x2_LCD U1
+U 1 1 5A88B6D8
+P 2900 4700
+F 0 "U1" H 2900 5400 60  0000 C CNN
+F 1 "16x2_LCD" H 2900 3250 60  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x16_Pitch2.54mm" H 2900 5400 60  0001 C CNN
+F 3 "" H 2900 5400 60  0001 C CNN
+	1    2900 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L D D1
+U 1 1 5A88B738
+P 5950 4400
+F 0 "D1" H 5950 4500 50  0000 C CNN
+F 1 "D" H 5950 4300 50  0000 C CNN
+F 2 "Diodes_SMD:D_MELF-RM10_Universal_Handsoldering" H 5950 4400 50  0001 C CNN
+F 3 "" H 5950 4400 50  0001 C CNN
+	1    5950 4400
+	0    1    1    0   
+$EndComp
+$Comp
+L HSC_Sensor U2
+U 1 1 5A88B78C
+P 4950 4000
+F 0 "U2" H 6250 6050 60  0000 C CNN
+F 1 "HSC_Sensor" H 6250 5300 60  0000 C CNN
+F 2 "PB:HSCDAND015PDSA3" H 6250 5300 60  0001 C CNN
+F 3 "" H 6250 5300 60  0001 C CNN
+	1    4950 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L RELAY U5
+U 1 1 5A88B8E6
+P 6950 4400
+F 0 "U5" H 6950 4050 60  0000 C CNN
+F 1 "RELAY" H 6900 4700 60  0000 C CNN
+F 2 "PB:JZC-11F" H 6950 4400 60  0001 C CNN
+F 3 "" H 6950 4400 60  0001 C CNN
+	1    6950 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 4250 5950 3950
+Wire Wire Line
+	5950 3950 6500 3950
+Wire Wire Line
+	5950 4550 5950 4850
+Wire Wire Line
+	5950 4850 6500 4850
+$Comp
+L Screw_Terminal_01x02 J2
+U 1 1 5A88BC06
+P 7800 5100
+F 0 "J2" H 7800 5200 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 7800 4900 50  0000 C CNN
+F 2 "Connectors_Terminal_Blocks:TerminalBlock_Pheonix_PT-3.5mm_2pol" H 7800 5100 50  0001 C CNN
+F 3 "" H 7800 5100 50  0001 C CNN
+	1    7800 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 4850 7350 5100
+Wire Wire Line
+	7350 5100 7600 5100
+$Comp
+L GND #PWR01
+U 1 1 5A88BCF0
+P 7200 5300
+F 0 "#PWR01" H 7200 5050 50  0001 C CNN
+F 1 "GND" H 7200 5150 50  0000 C CNN
+F 2 "" H 7200 5300 50  0001 C CNN
+F 3 "" H 7200 5300 50  0001 C CNN
+	1    7200 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 5300 7200 5200
+Wire Wire Line
+	7200 5200 7600 5200
+Text Label 2100 4250 0    60   ~ 0
+5VDD
+Text Label 2100 4350 0    60   ~ 0
+Vout
+Text Label 2100 4450 0    60   ~ 0
+D8
+Text Label 2100 4650 0    60   ~ 0
+D7
+Text Label 2100 5150 0    60   ~ 0
+D5
+Text Label 2100 5250 0    60   ~ 0
+D4
+Text Label 2100 5350 0    60   ~ 0
+D3
+Text Label 2100 5450 0    60   ~ 0
+D6
+Text Label 2100 5550 0    60   ~ 0
+5VDD
+$Comp
+L GND #PWR02
+U 1 1 5A88C04D
+P 1950 5650
+F 0 "#PWR02" H 1950 5400 50  0001 C CNN
+F 1 "GND" H 1950 5500 50  0000 C CNN
+F 2 "" H 1950 5650 50  0001 C CNN
+F 3 "" H 1950 5650 50  0001 C CNN
+	1    1950 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 5A88C079
+P 1950 4150
+F 0 "#PWR03" H 1950 3900 50  0001 C CNN
+F 1 "GND" H 1950 4000 50  0000 C CNN
+F 2 "" H 1950 4150 50  0001 C CNN
+F 3 "" H 1950 4150 50  0001 C CNN
+	1    1950 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 5A88C105
+P 1350 2250
+F 0 "#PWR04" H 1350 2000 50  0001 C CNN
+F 1 "GND" H 1350 2100 50  0000 C CNN
+F 2 "" H 1350 2250 50  0001 C CNN
+F 3 "" H 1350 2250 50  0001 C CNN
+	1    1350 2250
+	1    0    0    -1  
+$EndComp
+Text Label 1550 2150 0    60   ~ 0
+5VDD
+Text Label 1550 2450 0    60   ~ 0
+V_IN
+Text Label 3950 1750 0    60   ~ 0
+SCLK
+Text Label 3950 1850 0    60   ~ 0
+MISO
+Text Label 3950 2050 0    60   ~ 0
+SS
+Text Label 3950 2250 0    60   ~ 0
+D8
+Text Label 3950 2450 0    60   ~ 0
+D7
+Text Label 3950 2550 0    60   ~ 0
+D6
+Text Label 3950 2650 0    60   ~ 0
+D5
+Text Label 3950 2750 0    60   ~ 0
+D4
+Text Label 3950 2850 0    60   ~ 0
+D3
+Text Label 3950 2950 0    60   ~ 0
+D2
+Wire Wire Line
+	1550 2150 1850 2150
+Wire Wire Line
+	1550 2450 1850 2450
+Wire Wire Line
+	3950 1750 3750 1750
+Wire Wire Line
+	3950 1850 3750 1850
+Wire Wire Line
+	3950 2050 3750 2050
+Wire Wire Line
+	3950 2250 3750 2250
+Wire Wire Line
+	3950 2450 3750 2450
+Wire Wire Line
+	3950 2550 3750 2550
+Wire Wire Line
+	3950 2650 3750 2650
+Wire Wire Line
+	3950 2750 3750 2750
+Wire Wire Line
+	3950 2850 3750 2850
+Wire Wire Line
+	3950 2950 3750 2950
+Text Label 1450 2050 0    60   ~ 0
+3_3VDD
+Wire Wire Line
+	1450 2050 1850 2050
+Text Label 5400 2300 0    60   ~ 0
+3_3VDD
+Wire Wire Line
+	5400 2300 5750 2300
+Text Label 5500 2400 0    60   ~ 0
+MISO
+Text Label 5500 2500 0    60   ~ 0
+SCLK
+Text Label 6950 2500 0    60   ~ 0
+SS
+Wire Wire Line
+	5500 2500 5750 2500
+Wire Wire Line
+	5500 2400 5750 2400
+Wire Wire Line
+	6950 2500 6750 2500
+Wire Wire Line
+	1950 4150 2400 4150
+Wire Wire Line
+	2100 4250 2400 4250
+Wire Wire Line
+	2100 4350 2400 4350
+Wire Wire Line
+	2100 4450 2400 4450
+Wire Wire Line
+	2100 4650 2400 4650
+Wire Wire Line
+	2100 5150 2400 5150
+Wire Wire Line
+	2100 5250 2400 5250
+Wire Wire Line
+	2100 5350 2400 5350
+Wire Wire Line
+	2100 5450 2400 5450
+Wire Wire Line
+	2100 5550 2400 5550
+Wire Wire Line
+	1950 5650 2400 5650
+Wire Wire Line
+	1350 2250 1850 2250
+$Comp
+L Potentiometer-RESCUE-P_B U3
+U 1 1 5A88CF69
+P 4400 4450
+F 0 "U3" H 4400 4750 60  0000 C CNN
+F 1 "Potentiometer" H 4400 4650 60  0000 C CNN
+F 2 "Potentiometers:Potentiometer_Bourns_3296W_3-8Zoll_Inline_ScrewUp" H 4400 4850 60  0001 C CNN
+F 3 "" H 4400 4850 60  0001 C CNN
+	1    4400 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR05
+U 1 1 5A88D25C
+P 5300 2200
+F 0 "#PWR05" H 5300 1950 50  0001 C CNN
+F 1 "GND" H 5300 2050 50  0000 C CNN
+F 2 "" H 5300 2200 50  0001 C CNN
+F 3 "" H 5300 2200 50  0001 C CNN
+	1    5300 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 2200 5750 2200
+$Comp
+L GND #PWR06
+U 1 1 5A88D327
+P 4800 4850
+F 0 "#PWR06" H 4800 4600 50  0001 C CNN
+F 1 "GND" H 4800 4700 50  0000 C CNN
+F 2 "" H 4800 4850 50  0001 C CNN
+F 3 "" H 4800 4850 50  0001 C CNN
+	1    4800 4850
+	1    0    0    -1  
+$EndComp
+Text Label 4400 4850 0    60   ~ 0
+Vout
+Text Label 4000 4850 0    60   ~ 0
+5VDD
+Wire Wire Line
+	4000 4750 4000 4850
+Wire Wire Line
+	4400 4750 4400 4850
+Wire Wire Line
+	4800 4750 4800 4850
+Text Label 4850 6450 0    60   ~ 0
+S1
+Wire Wire Line
+	4850 6450 4850 6650
+Connection ~ 4850 6650
+Text Label 7200 3800 0    60   ~ 0
+S1
+Wire Wire Line
+	7200 3800 7200 3950
+Text Label 5150 6650 0    60   ~ 0
+V_IN
+$Comp
+L GND #PWR07
+U 1 1 5A88DDAF
+P 4850 6850
+F 0 "#PWR07" H 4850 6600 50  0001 C CNN
+F 1 "GND" H 4850 6700 50  0000 C CNN
+F 2 "" H 4850 6850 50  0001 C CNN
+F 3 "" H 4850 6850 50  0001 C CNN
+	1    4850 6850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 6750 4850 6750
+Wire Wire Line
+	4850 6750 4850 6850
+Wire Wire Line
+	4850 6850 4600 6850
+$Comp
+L TRANSISTOR-NPN-BIPOLAR_EN60617_Derived05-05-02_Date20130304-RESCUE-P_B T1
+U 1 1 5A88E04C
+P 6450 5300
+F 0 "T1" H 6750 5350 50  0000 C CNN
+F 1 "TRANSISTOR-NPN-BIPOLAR_EN60617_Derived05-05-02_Date20130304" H 6550 4985 50  0000 C CNN
+F 2 "Transistors_OldSowjetAera:OldSowjetaera_Transistor_Type-II_SmallPads" H 6450 5300 50  0001 C CNN
+F 3 "" H 6450 5300 50  0000 C CNN
+	1    6450 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 4850 6500 5100
+$Comp
+L R R1
+U 1 1 5A88E0EB
+P 5850 5300
+F 0 "R1" V 5930 5300 50  0000 C CNN
+F 1 "R" V 5850 5300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5780 5300 50  0001 C CNN
+F 3 "" H 5850 5300 50  0001 C CNN
+	1    5850 5300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6000 5300 6250 5300
+$Comp
+L GND #PWR08
+U 1 1 5A88E16D
+P 6500 5800
+F 0 "#PWR08" H 6500 5550 50  0001 C CNN
+F 1 "GND" H 6500 5650 50  0000 C CNN
+F 2 "" H 6500 5800 50  0001 C CNN
+F 3 "" H 6500 5800 50  0001 C CNN
+	1    6500 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 5500 6500 5800
+Text Label 5450 5050 0    60   ~ 0
+5VDD
+Wire Wire Line
+	5450 5050 5450 5300
+Wire Wire Line
+	5450 5300 5700 5300
+Wire Wire Line
+	4600 6650 5150 6650
+Text Label 6500 3800 0    60   ~ 0
+5VDD
+Wire Wire Line
+	6500 3950 6500 3800
+$EndSCHEMATC
